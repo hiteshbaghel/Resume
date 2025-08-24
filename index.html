@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tina Miller - Professional Resume</title>
+    <!-- Use Tailwind CSS for modern, professional styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply a clean font and basic styles to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        /* Set the main container properties for the resume */
+        .resume-container {
+            max-width: 850px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem;
+        }
+
+        /* Style for section titles with a border */
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #d1d5db;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Styles for individual job/education entries */
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .entry-location {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+
+        .entry-date {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+
+        /* Styles for list items (bullet points) */
+        .entry-list {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .entry-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 1.5rem;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (max-width: 480px) {
+            .skills-grid {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="resume-container">
+
+        <!-- Header Section -->
+        <header class="mb-8 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Tina Miller</h1>
+            <p class="text-gray-600 text-sm">
+                Florida • 123-5456-7890 • tinamillernyc20@gmail.com • linkedin.com/in/tina-miller-nyc
+            </p>
+        </header>
+
+        <!-- Senior Marketing Manager Summary -->
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">Senior Marketing Manager</h2>
+            <p class="text-gray-700">
+                7+ years of social marketing experience, driving customer growth and engagement in digital, B2B, and content marketing campaigns. Increased brand awareness by 25%, website traffic by 40%, customer acquisition by 25%, customer lifetime value by 30%, and sales revenue by $2M in 6 months. Led campaign strategies, resulting in a 45% increase in lead conversion.
+            </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mb-8">
+            <h2 class="section-title">WORK EXPERIENCE</h2>
+
+            <!-- WeWork Entry -->
+            <div class="mb-6">
+                <div class="entry-header">
+                    <h3 class="entry-title">WeWork</h3>
+                    <p class="entry-date">07/2020 - Present</p>
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <p class="font-semibold text-gray-700 text-sm">Senior Marketing Manager</p>
+                    <p class="entry-location">New York, United States</p>
+                </div>
+                <ul class="entry-list">
+                    <li>Increased lead generation by 30% in 3 months through the development and execution of cross-channel campaigns targeting key customer segments.</li>
+                    <li>Increased the company's online presence by 25%, driving a 40% increase in website traffic and generating $2M in revenue through successful digital campaigns.</li>
+                    <li>Led the analysis of over 75 marketing campaigns, uncovering actionable insights that led to a 25% increase in customer acquisition and a 40% growth in customer lifetime value year-over-year.</li>
+                </ul>
+            </div>
+
+            <!-- NVIDIA Entry -->
+            <div class="mb-6">
+                <div class="entry-header">
+                    <h3 class="entry-title">NVIDIA</h3>
+                    <p class="entry-date">03/2020 - 06/2023</p>
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <p class="font-semibold text-gray-700 text-sm">Marketing Manager</p>
+                </div>
+                <ul class="entry-list">
+                    <li>Managed a comprehensive cross-functional marketing campaign for a new product launch, overseeing a team of 10 professionals, coordinating promotional activities, and executing digital marketing strategies across multiple channels. The campaign resulted in a 30% increase in brand awareness, generating $500,000 in sales revenue within Q1.</li>
+                    <li>Improved long and short form YouTube strategy resulting in a 15% increase in channel views month over month through a better, SEO-targeting media strategy.</li>
+                </ul>
+            </div>
+
+            <!-- White Lotus Resort Entry -->
+            <div class="mb-6">
+                <div class="entry-header">
+                    <h3 class="entry-title">White Lotus Resort</h3>
+                    <p class="entry-date">01/2017 - 01/2020</p>
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <p class="font-semibold text-gray-700 text-sm">Marketing Manager</p>
+                </div>
+                <ul class="entry-list">
+                    <li>Boosted digital advertising revenue by 6% within 9 months by leveraging strategic B2B and B2C relationships, enhancing client engagement.</li>
+                    <li>Developed a comprehensive B2B/B2C digital advertising strategy, driving a 300% revenue increase within 6 months by optimizing targeted campaigns.</li>
+                    <li>Created a comprehensive digital marketing strategy that significantly improved online visibility, resulting in a measurable increase in customer engagement.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="section-title">EDUCATION</h2>
+
+            <!-- MA Entry -->
+            <div class="mb-4">
+                <div class="entry-header">
+                    <h3 class="entry-title">Master of Arts - MA in Marketing Management</h3>
+                    <p class="entry-location">Atlanta, Georgia</p>
+                </div>
+                <p class="text-sm text-gray-700">Georgia Institute of Technology Scheller College of Business</p>
+            </div>
+
+            <!-- BS Entry -->
+            <div>
+                <div class="entry-header">
+                    <h3 class="entry-title">Bachelor of Science - BS in Communications</h3>
+                    <p class="entry-location">New York City, New York</p>
+                </div>
+                <p class="text-sm text-gray-700">Columbia University in the City of New York</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-grid grid grid-cols-3 gap-y-2 text-sm text-gray-700">
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>Advertising
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>Email Marketing
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>New Business Development
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>Analysis
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>Events Management
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2">&bull;</span>Paid Digital Channels
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
